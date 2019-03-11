@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane alignment="center" hgap="10" minHeight="500.0" minWidth="500.0" prefHeight="888.0" prefWidth="933.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NPV.Controller">
+   
+   <children>
+      <Label fx:id="annualGainLabel" alignment="TOP_LEFT" layoutX="186.0" layoutY="163.0" minWidth="60.0" text="Annual Gain ($)" GridPane.rowIndex="3" />
+      <TextField fx:id="annualGainTextField" layoutX="100.0" layoutY="153.0" prefHeight="31.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+      <Label fx:id="initalInvLabel" alignment="TOP_LEFT" text="Initial Investment ($)" GridPane.rowIndex="4" />
+      <TextField fx:id="initalInvTextField" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+      <Label fx:id="discountRateLabel" alignment="TOP_LEFT" layoutX="196.0" layoutY="147.0" text="Discount rate (%)" GridPane.rowIndex="5" />
+      <TextField fx:id="discountRateTextField" prefHeight="31.0" prefWidth="238.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+      <Label fx:id="usefulLifeLabel" alignment="TOP_LEFT" layoutX="186.0" layoutY="163.0" minWidth="100.0" prefHeight="21.0" prefWidth="363.0" text="Useful Life of Investment (years)" GridPane.rowIndex="6" />
+      <TextField fx:id="usefulLifeTextField" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+      <Label fx:id="npvLabel" alignment="TOP_LEFT" text="Net Present Value ($)" GridPane.rowIndex="8" />
+      <TextField fx:id="npvTextField" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+      <Button fx:id="calculateButton" mnemonicParsing="false" onAction="#calculatePressed" prefHeight="31.0" prefWidth="144.0" text="Calculate" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+   </padding>
+</GridPane>
